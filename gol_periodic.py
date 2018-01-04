@@ -65,17 +65,6 @@ def conway_step():
         # count number of neighbours
             arena1[x][y] = arena2[x][y] 
 
-def simple_step():
-    global arena1, arena2
-    for x in range(5):
-        for y in range(5):
-            # count number of neighbours
-            arena2[pb(x)][pb(y)] = arena1[pb(x+1)][pb(y)]
-            # swap the buffers (arena1 is now the new one to display)
-    for x in range(5):
-        for y in range(5):
-            # count number of neighbours
-            arena1[x][y] = arena2[x][y]    
 
 def program_init_state():
     j = 0
